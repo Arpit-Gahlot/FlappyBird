@@ -8,10 +8,10 @@ package Main;
 import Entity.Bird;
 import ObstacleDetails.Obstacles;
 
-import javax.swing.JPanel;
+import javax.swing.*;
 import java.awt.*;
 
-public class GamePanel extends JPanel implements Runnable{
+public class GamePanel extends JPanel implements Runnable {
 
     //Screen Settings
     final int originalTileSize = 16; //16x16 tile

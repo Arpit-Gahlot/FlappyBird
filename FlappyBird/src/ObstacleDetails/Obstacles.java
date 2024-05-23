@@ -5,8 +5,6 @@
 package ObstacleDetails;
 
 import Main.GamePanel;
-import Main.CollisionChecker;
-
 import java.awt.*;
 import java.util.Random;
 
@@ -20,6 +18,7 @@ public class Obstacles {
     public int obstacleShiftSpeed;
     public ObstacleQueue.Node targetObstacle;
     public boolean collisionHappened;
+    public int score;
 
     //constructor
     public Obstacles(GamePanel gp){
@@ -29,6 +28,7 @@ public class Obstacles {
         timeCounter = 0;
         obstacleShiftSpeed = 3;
         collisionHappened = false;
+        score = 0;
     }
 
     ////This method is called 60 times each second and handles all the movements of the obstacles
@@ -83,6 +83,7 @@ public class Obstacles {
 
         if (timeCounter > 0) {
             gameInstructions(g2);
+            showScore(g2);
         }
     }
 
@@ -99,6 +100,9 @@ public class Obstacles {
         g.setColor(Color.white);
         g.setFont(new Font("Ink Free", Font.BOLD, 75));
         g.drawString("Game Over", gp.screenWidth/2 - 4 * gp.tileSize, gp.screenHeight/2);
+
+        g.setFont(new Font("Ink Free", Font.BOLD, 50));
+        g.drawString("Your score is: " + score, gp.screenWidth/2 - 4 * gp.tileSize + 20, gp.screenHeight/2 + 2 * gp.tileSize);
     }
 
     //This method displays a small instruction at the top during the game
@@ -107,5 +111,13 @@ public class Obstacles {
         g.setColor(Color.white);
         g.setFont(new Font("Ink Free", Font.BOLD, 25));
         g.drawString("Press W to Flap", gp.screenWidth/2 - 2 * gp.tileSize, gp.tileSize);
+    }
+
+    //This method is used for displaying the score during the game
+    public void showScore(Graphics g) {
+
+        g.setColor(Color.white);
+        g.setFont(new Font("Ink Free", Font.BOLD, 25));
+        g.drawString("Score: " + score , gp.screenWidth - 3 * gp.tileSize + 20, gp.tileSize);
     }
 }

@@ -23,7 +23,7 @@
         <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
     <option name="SWAP_SIDES_IN_COMPARE_BRANCHES" value="true" />
   </component>
   <component name="ProjectColorInfo">{
@@ -40,10 +40,12 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.GameRunner.executor": "Run",
+    "Notification.DisplayName-DoNotAsk-Vcs Important Messages": "VCS important messages",
+    "Notification.DoNotAsk-Vcs Important Messages": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -90,6 +92,8 @@
       <workItem from="1716300158255" duration="13435000" />
       <workItem from="1716364831353" duration="10057000" />
       <workItem from="1716402974257" duration="236000" />
+      <workItem from="1716404804136" duration="208000" />
+      <workItem from="1716450417414" duration="10046000" />
     </task>
     <task id="LOCAL-00001" summary="FlappyBird game Finished">
       <option name="closed" value="true" />

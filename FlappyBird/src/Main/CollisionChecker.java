@@ -66,6 +66,7 @@ public class CollisionChecker {
         if (obstacles.targetObstacle.data.currentXCoordinate + gp.tileSize < leftBirdX) {
 
             obstacles.targetObstacle = obstacles.targetObstacle.next;
+            obstacles.score = obstacles.score + 1;
         }
     }
 }
